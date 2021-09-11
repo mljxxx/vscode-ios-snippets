@@ -1,18 +1,4 @@
 {
-    "Import Framework Header": {
-        "body": [
-            "#import <${Framework}/${HeaderFile}.h>"
-        ],
-        "description": "Import Framework Header File",
-        "prefix": "#import-framework"
-    },
-    "Import Local Header": {
-        "body": [
-            "#import \"${HeaderFile}.h\""
-        ],
-        "description": "Import Local Header File",
-        "prefix": "#import-local"
-    },
     "Objective-C -debugDescription Method": {
         "body": [
             "- (NSString *)debugDescription",
@@ -81,21 +67,10 @@
         "description": "Objective-C -initWithFrame: Method",
         "prefix": "initWithFrame"
     },
-    "Objective-C Do-While Statement": {
-        "body": [
-            "do {",
-            "\t${statements}",
-            "} while (${condition});"
-        ],
-        "description": "Objective-C Do-While Statement",
-        "prefix": "do"
-    },
     "Objective-C Enumerated Type Declaration (NS_ENUM)": {
         "body": [
             "typedef NS_ENUM(NSUInteger, ${name}) {",
-            "\t${valueA},",
-            "\t${valueB},",
-            "\t${valueC},",
+            "\t${statements}",
             "};"
         ],
         "description": "Objective-C Enumerated Type Declaration (NS_ENUM)",
@@ -104,58 +79,11 @@
     "Objective-C Enumerated Type Declaration (NS_OPTIONS)": {
         "body": [
             "typedef NS_OPTIONS(NSUInteger, ${name}) {",
-            "\t${valueA} = 1 << 0,",
-            "\t${valueB} = 1 << 1,",
-            "\t${valueC} = 1 << 2,",
+            "\t${statements}",
             "};"
         ],
         "description": "Objective-C Enumerated Type Declaration (NS_OPTIONS)",
         "prefix": "options"
-    },
-    "Objective-C Fast Enumeration": {
-        "body": [
-            "for (${type} *${object} in ${collection}) {",
-            "\t${statements}",
-            "}"
-        ],
-        "description": "Objective-C Fast Enumeration",
-        "prefix": "forin"
-    },
-    "Objective-C For Statement": {
-        "body": [
-            "for (${initialization}; ${condition}; ${increment}) {",
-            "\t${statements}",
-            "}"
-        ],
-        "description": "Objective-C For Statement",
-        "prefix": "for"
-    },
-    "Objective-C If Statement": {
-        "body": [
-            "if (${condition}) {",
-            "\t${statements}",
-            "}"
-        ],
-        "description": "Objective-C If Statement",
-        "prefix": "if"
-    },
-    "Objective-C If-Else Statement": {
-        "body": [
-            "if (${condition}) {",
-            "\t${statementA}",
-            "} else {",
-            "\t${statementB}",
-            "}"
-        ],
-        "description": "Objective-C If-Else Statement",
-        "prefix": "ifelse"
-    },
-    "Objective-C Property": {
-        "body": [
-            "@property (${memory}, ${atomicity}, ${nullability}) ${class name/type} ${property name};"
-        ],
-        "description": "Objective-C Property",
-        "prefix": "@property"
     },
     "Objective-C Switch Statement": {
         "body": [
