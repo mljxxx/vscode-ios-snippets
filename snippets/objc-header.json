@@ -1,0 +1,36 @@
+{
+	"DEF File Header Comment" :{
+		"body": [
+			"$LINE_COMMENT",
+			"$LINE_COMMENT  $TM_FILENAME",
+			"$LINE_COMMENT",
+			"$LINE_COMMENT  Created by bytedance on $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE.",
+			"$LINE_COMMENT",
+			"",
+			"",
+			"#import <UIKit/UIKit.h>",
+			"NS_ASSUME_NONNULL_BEGIN",
+			"@interface $TM_FILENAME_BASE : ${Superclass}",
+			"",
+			"",
+			"@end",
+			"NS_ASSUME_NONNULL_END"
+		]
+	},
+	"IMP File Header Comment" :{
+		"body": [
+			"$LINE_COMMENT",
+			"$LINE_COMMENT  $TM_FILENAME",
+			"$LINE_COMMENT",
+			"$LINE_COMMENT  Created by bytedance on $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE.",
+			"$LINE_COMMENT",
+			"",
+			"",
+			"#import \"$TM_FILENAME_BASE.h\"",
+			"@implementation $TM_FILENAME_BASE",
+			"",
+			"",
+			"@end"
+		]
+	}
+}
